@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Layout de 8 partes</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="">Logo</a>
+        <div class="menu-esquerda">
+            <ul class="menu">
+                <li><a href="">Condomínios</a></li>
+                <li><a href="">Fórum</a></li>
+                <li><a href="">Guia</a></li>
+                <li><a href="">Artigos</a></li>
+                <li><a href="">Ferramentas</a></li>
+            </ul>
+        </div>
+        <div class="menu-direita">
+                <ul class="menu">
+                    <li><a href="">Cotar imóvel</a></li>
+                    <li><a href="">Planos</a></li>
+                    <li><a href="">Entrar</a></li>
+                </ul>
+            <button>CADASTRE-SE</button>
+        </div>
+        <div class="menuHamburguer" id="menuHamburguer" onclick="abrirMenu()">
+            <span id="burguer" class="material-symbols-outlined">menu</span>
+        </div>
+
+    </header>
+    <div class="menu-lateral" id="menuLateral">
+        <ul class="menu">
+            <li><a href="">Condomínios</a></li>
+            <li><a href="">Fórum</a></li>
+            <li><a href="">Guia</a></li>
+            <li><a href="">Artigos</a></li>
+            <li><a href="">Ferramentas</a></li>
+            <li><a href="">Cotar imóvel</a></li>
+            <li><a href="">Planos</a></li>
+            <li><a href="">Entrar</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="reparticao-1">
+            <div class="card">
+                <div class="fundo-feminino">
+                    <div class="image-focada">
+                        <img src="images/feminino.jpg">
+                    </div>
+                </div>
+                <div class="legenda">
+                    <h1>Nome Corretora</h1>
+                    <p>3.000 pontos</p>
+                    <a href="#" id="link" onclick="trocaTexto1()">
+                        <p id="verTelefone1">ver telefone</p>
+                    </a>
+                </div>
+                <div class="fundo-masculino">
+                    <div class="image-focada">
+                        <img src="images/masculino.jpg">
+                    </div>
+                </div>
+                <div class="legenda">
+                    <h1>Nome Corretor</h1>
+                    <p>3.000 pontos</p>
+                    <a href="#" id="link" onclick="trocaTexto2()">
+                        <p id="verTelefone2">ver telefone</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="reparticao-2">
+            <div class="card">
+                <h1>Mande uma mensagem:</h1>
+                <input type="text" placeholder="Digite seu CPF" id="cpf" maxlength="14">
+                <input type="text" placeholder="Digite seu telefone" id="telefone" maxlength="14">
+                <textarea name="assunto" id="assunto" cols="40" rows="5" placeholder="Digite o assunto"></textarea>
+                <button onclick="exibirMensagem()">Enviar Mensagem</button>
+            </div>
+        </div>
+        <div class="reparticao-3">
+            <div class="card">
+                <h1>Regra de 3</h1>
+                <div class="card-interno">
+                    <input type="text" placeholder="60" id="primeiroValor" required>
+                    <p>_____</p>
+                    <input type="text" placeholder="100" id="segundoValor" required>
+                    <input type="text" placeholder="30" id="terceiroValor" required>
+                    <p>_____</p>
+                    <input class="resultado" type="text" id="result">
+                </div>
+                <button class="calcular" onclick="realizaCalculo()">Calcular</button>
+            </div>
+        </div>
+        <div class="reparticao-4">
+            <div class="card">
+                <img src="images/casa.jpg">
+            </div>
+            <div class="button">
+                <button id="buttonModel">ABRIR IMAGEM NO MODEL</button>
+            </div>
+            <dialog class="dialogModal" id="dialogModal">
+                <div class="cardModal">
+                    <div class="head">
+                        <a class="buttonClose" id="buttonClose">X</a>
+                    </div>
+                    <hr/>
+                    <img src="images/casa.jpg">
+                </div>
+            </dialog>
+        </div>
+        <div class="reparticao-5">
+            <div class="card" id="capture">
+                <div class="card-interno">
+                    <img src="images/casa.jpg">
+                    <div class="imovelGuide">
+                        Imovel Guide
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="print()">Download</button>
+            </div>
+        </div>
+        <div class="reparticao-6">
+            <div class="card">
+            <img src="images/casa.jpg">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="menu-esquerda">
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Termos</a></li>
+                    <li><a href="">Contatos</a></li>
+                    <li><a href="">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-direita">
+            <p>Copyright 2022. Todos os direitos reservados</p>
+        </div>
+        <a href="">Logo</a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

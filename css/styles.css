@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+}
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.0rem;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+span.material-symbols-outlined {
+    font-size: 48px;
+    font-variation-settings: 'OPSZ' 48;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1B2653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu li a {
+    display: block;
+    padding: 5px;
+}
+
+.menuHamburguer {
+    display: none;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+.menu-esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-direita {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-direita button {
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: #1B2653;
+    color: white;
+    border-color: white;
+    font-weight: 900;
+}
+
+.menu-lateral {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1B2653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    display: flex;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    row-gap: 30px;
+    column-gap: 40px;
+    padding: 10px;
+}
+
+.image-focada img {
+    border: none;
+}
+
+.reparticao-1 .card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #787878;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.reparticao-1 .card .fundo-feminino {
+    background-image: url('../images/feminino.jpg');
+    background-size: 150%;
+    background-position: center;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.reparticao-1 .card .fundo-feminino .image-focada{
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    filter: none;
+}
+
+.reparticao-1 .card .fundo-feminino .image-focada img{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.reparticao-1 .card .fundo-masculino {
+    background-image: url('../images/masculino.jpg');
+    background-size: 150%;
+    background-position: center;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.reparticao-1 .card .fundo-masculino .image-focada{
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    filter: none;
+}
+
+.reparticao-1 .card .fundo-masculino .image-focada img{
+    max-width: 100%;
+    max-height: auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.reparticao-1 .card a {
+    color: #FE6613;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+.reparticao-1 .legenda h1 {
+    font-size: 16px;
+    color: #1B2653;
+    font-weight: '900';
+}
+
+.reparticao-1 .legenda p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.reparticao-2 .card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #787878;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.reparticao-2 .card h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1B2653;
+}
+
+.reparticao-2 input {
+    padding: 5px;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #787878;
+}
+
+.reparticao-2 .card textarea {
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #787878;
+}
+
+.reparticao-2 .card button {
+    background-color: #FE6613;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.reparticao-2 .card button p {
+    font-size: 15px;
+}
+
+.reparticao-3 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.reparticao-3 .card h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1B2653;
+    margin-left: 10px;
+    
+}
+
+.reparticao-3 .card .card-interno {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    flex-wrap: wrap;
+    max-width: 100%;
+    row-gap: 20px;
+    column-gap: 0px;
+    padding: 10px;
+}
+
+.reparticao-3 .card .card-interno input {
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #787878;
+}
+
+.reparticao-3 .card .card-interno .resultado {
+    padding: 5px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #FE6613;
+}
+
+.reparticao-3 .card .card-interno p {
+    margin-right: 5px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.reparticao-3 .card button {
+    margin-left: 10px;
+    width: 40%;
+    background-color: #FE6613;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.reparticao-4 .card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #787878;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.reparticao-4 .card img {
+    border-radius: 5px;
+}
+
+.reparticao-4 .button {
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.reparticao-4 .button button{
+    margin-left: 10px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #FE6613;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.cardModal {
+    width: 100%;
+    height: auto;
+}
+
+.cardModal .head {
+    padding: 10px;
+    text-align: right;
+}
+
+.cardModal a {
+    font-weight: 900;
+    border: none;
+    color: #FE6613;
+    cursor: pointer;
+}
+
+.cardModal img {
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 35px;
+    max-width: 100%;
+    display: block;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / .5);
+}
+
+dialog {
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.reparticao-5 .card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #787878;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.reparticao-5 .card .card-interno{
+    display: grid;
+}
+
+.reparticao-5 .card .card-interno img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1/4;
+    border-radius: 5px;
+}
+
+.reparticao-5 .card .card-interno .imovelGuide {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FE6613;
+    opacity: 0.9;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.reparticao-5 .card .card-interno .button button {
+    margin-left: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FE6613;
+    opacity: 0.9;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.reparticao-5 .button {
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.reparticao-5 .button button{
+    margin-left: 10px;
+    width: 180px;
+    margin: 0 auto;
+    background-color: #FE6613;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.reparticao-6 .card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #787878;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.reparticao-6 .card img {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    animation: zoom 10s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0%{transform: scale(1.50);}
+    10%{transform: scale(1.45);}
+    20%{transform: scale(1.40);}
+    30%{transform: scale(1.35);}
+    40%{transform: scale(1.30);}
+    50%{transform: scale(1.25);}
+    60%{transform: scale(1.20);}
+    70%{transform: scale(1.15);}
+    80%{transform: scale(1.10);}
+    90%{transform: scale(1.05);}
+    100%{transform: scale(1.00);}
+}
+
+@media (max-width: 1086px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: auto;
+        row-gap: 30px;
+        column-gap: 40px;
+        padding: 10px;
+    }
+
+    .menuHamburguer {
+        display: flex;
+    }
+
+    .header .menu-esquerda {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header .menu-direita {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-lateral {
+        display: none;
+        width: 100%;
+        height: auto;
+        row-gap: 30px;
+        column-gap: 40px;
+        position: fixed;
+        justify-content: end;
+    }
+
+    .menu-lateral .menu {
+        width: 300px;
+        display: grid;
+        text-align: center;
+        gap: 20px;
+        background-color: #787878;
+    }
+ 
+    dialog::backdrop {
+        background-color: rgb(0 0 0 / .5);
+    }
+    
+    dialog {
+        border: none;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .cardModal img {
+        margin: auto;
+    }
+
+    .footer .menu-esquerda {
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: auto;
+        row-gap: 30px;
+        column-gap: 40px;
+        padding: 10px;
+    }
+
+    .menuHamburguer {
+        display: flex;
+    }
+
+    .header .menu-esquerda {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header .menu-direita {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-lateral {
+        display: none;
+        width: 100%;
+        height: auto;
+        row-gap: 30px;
+        column-gap: 40px;
+        position: fixed;
+        justify-content: end;
+    }
+
+    .menu-lateral .menu {
+        width: 300px;
+        display: grid;
+        text-align: center;
+        gap: 20px;
+        background-color: #787878;
+    }
+
+    .footer .menu-esquerda {
+        display: none;
+    }
+}
+
+@media (max-width: 360px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: auto;
+        min-width: 360px;
+        row-gap: 30px;
+        column-gap: 40px;
+        padding: 10px;
+    }
+
+    .menuHamburguer {
+        display: flex;
+    }
+
+    .header .menu-esquerda {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header .menu-direita {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-lateral {
+        display: none;
+        width: 100%;
+        height: auto;
+        row-gap: 30px;
+        column-gap: 40px;
+        position: fixed;
+        justify-content: end;
+    }
+
+    .menu-lateral .menu {
+        width: 300px;
+        display: grid;
+        text-align: center;
+        gap: 20px;
+        background-color: #787878;
+    }
+
+    .footer .menu-esquerda {
+        display: none;
+    }
+}
+
